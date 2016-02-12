@@ -8,6 +8,8 @@ url: "http://reflexohub.github.io/"
 baseurl: "site-web-v1-test"
 
 markdown: kramdown
+kramdown:
+  input: GFM
 
 exclude: [ "CNAME", "README.md", "Gemfile", "Gemfile.lock" ]
 
