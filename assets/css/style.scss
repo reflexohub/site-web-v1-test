@@ -1,0 +1,283 @@
+---
+---
+
+@import url(https://fonts.googleapis.com/css?family=Macondo+Swash+Caps);
+
+$base-font:          'Macondo Swash Caps', cursive;
+$section-bkg-color:  rgba( 255, 255, 255, 0.8 );
+$navbar-bkg-color:   rgba( 255, 255, 255, 0 );
+$title-color:        midnightblue;
+$navbar-brand-color: $title-color;
+$bkg-image:          "../../images/Fotolia_54913877_XL_1920x1280.jpg";
+
+
+
+@media screen {
+html {
+	background:#505D6E url( $bkg-image ) no-repeat center center fixed;
+	min-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+}
+
+body {
+	background:transparent;
+	min-height:100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size:17px;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#fff;
+	color:rgba(255,255,255,.8);
+	font-weight: normal;
+}
+
+
+/********************************************************/
+/*                      Typography                      */
+/********************************************************/
+a { color:#fff; text-decoration: underline; }
+a:hover, a:active { color:#fff; text-decoration: underline; }
+.lead {
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+
+h1, h2,
+.title,
+.subtitle {
+	font-family: $base-font;
+	font-weight:normal;
+	font-size:4em;
+	margin-bottom:60px;
+	margin-top: 40px;
+	color:#FDF9F4;
+	color: navy;
+	line-height:1em;
+}
+h2,
+.subtitle {
+	line-height:.9em;
+	font-size:3em;
+	margin-top:0;
+	margin-bottom:60px;
+}
+.tagline {
+	font-size:1.4em;
+	line-height:1.3em;
+	font-weight:normal;
+	margin-bottom:75px;
+}
+
+@media (max-width: 767px) {
+	.lead {
+		font-size:1.3em;
+	}
+}
+
+
+
+
+
+
+
+/***********************************************************/
+/*                   Inverted theme                        */
+/***********************************************************/
+.theme-invert {
+	color:#222;
+	color:rgba(0,0,0,.8);
+ }
+.theme-invert a {
+	color:#000;
+}
+.theme-invert .btn {
+	color:rgba(255,255,255,.8);
+}
+.theme-invert .btn:hover {
+	color:#fff;
+}
+.theme-invert .btn-link {
+	color:rgba(0,0,0,.8);
+}
+.theme-invert .btn-link:hover, .theme-invert .btn-link:focus, .theme-invert .btn-link:active {
+	color:#000
+}
+.theme-invert .navbar-toggle {
+	background: rgba(0, 0, 0, 0.12);
+}
+.theme-invert .navbar-toggle .icon-bar {
+  background: #333;
+}
+.theme-invert .mainmenu .dropdown-menu a {
+	color:#000;
+}
+.theme-invert .mainmenu .dropdown-menu a:hover {
+	background:rgba(0,0,0,.1);
+	color:#000;
+}
+/*.theme-invert h2,*/
+/*.theme-invert .subtitle,*/
+
+.theme-invert h1,
+.theme-invert .title,
+.theme-invert .tagline {
+	/*color:#222222;*/
+	color: $title-color;
+}
+
+.theme-invert .btn-default {
+	background: rgba(0,0,0,.4);
+}
+.theme-invert .btn-default:hover,
+.theme-invert .btn-default:focus,
+.theme-invert .btn-default:active,
+.theme-invert .btn-default.active {
+	background: rgba(0,0,0,.6);
+	color:#fff;
+}
+.theme-invert .btn-primary {
+	background: rgba(0,0,0,.2);
+}
+.theme-invert .btn-primary:hover,
+.theme-invert .btn-primary:focus,
+.theme-invert .btn-primary:active,
+.theme-invert .btn-primary.active {
+	background: rgba(0,0,0,.3);
+	color:#fff;
+}
+
+.theme-invert .thumbnail {
+	background-color: rgba(255,255,255,.8);
+}
+.thumbnail .caption {
+	color: inherit;
+}
+
+
+
+section.section div.container div.row div {
+	background-color: $section-bkg-color;
+	padding-bottom: 50px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+div.contenu ul {
+	text-align: left;
+}
+li a.active {
+	background:rgba( 0, 0, 0, .1 ) !important;
+}
+
+/*
+ul.dropdown-menu li:nth-child(n+6):nth-child(-n+10) {
+	display: none;
+}
+*/
+
+.navbar a { text-decoration: none; }
+
+.footer-text {
+	padding: 30px 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #FFF !important;
+	font-size: 10pt;
+}
+.footer-text a {
+	color: #FFF !important;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+
+}
+
+
+
+
+
+
+
+@media print {
+
+@page {
+	size: A4;
+	margin: 1.5cm 1.5cm 1.5cm;
+}
+
+nav.mainmenu {
+	display: none;
+}
+
+body {
+	margin: 0 !important;
+}
+
+section.section {
+	padding: 0 !important;
+	margin-bottom: 100px;
+}
+h1 {
+	font-size: 3em !important;
+}
+h2 {
+	font-size: 2em !important;
+}
+section p {
+	text-align: center !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+section img {
+	max-width: 10cm !important;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+
+nav.navbar {
+	background-color: $navbar-bkg-color;
+	border: $navbar-bkg-color;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+nav.navbar a.navbar-brand {
+	color: $navbar-brand-color;
+	font-style: italic;
+	font-family: $base-font;
+	font-size: 20pt;
+}
+
+div.navbar-header button.navbar-toggle {
+	border: 1px solid transparent;
+}

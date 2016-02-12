@@ -1,0 +1,23 @@
+
+title: "Suzanne Himmelberger — Réflexologue"
+description: Réflexologie, région de Genève, Suisse
+locale: fr
+
+# url: "http://suzanne-himmelberger.ch"
+url: "http://reflexohub.github.io/"
+baseurl: "site-web-v1-test"
+
+markdown: kramdown
+
+exclude: [ "CNAME", "README.md", "Gemfile", "Gemfile.lock" ]
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+gems:
+  - jekyll-sitemap
