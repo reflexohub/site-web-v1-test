@@ -11,7 +11,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-exclude: [ "CNAME", "README.md", "Gemfile", "Gemfile.lock" ]
+exclude: [ "CNAME", "README.md" ]
 
 defaults:
   -
