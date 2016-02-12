@@ -19,5 +19,3 @@ defaults:
     values:
       layout: "page"
 
-gems:
-  - jekyll-sitemap
