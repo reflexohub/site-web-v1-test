@@ -57,6 +57,9 @@ section {
 		margin-top: 50px;
 		margin-bottom: 30px;
 	}
+	:link {
+		word-wrap: break-word;
+	}
 }
 
 /* Sticky footer styles
@@ -102,4 +105,50 @@ footer.footer {
 
 .fade-in-on-load {
 	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media print {
+	@page {
+		size: A4;
+		margin: 1.5cm 1.5cm 1.5cm;
+	}
+	nav.mainmenu {
+		display: none;
+	}
+	body {
+		margin: 0 !important;
+	}
+	section.section {
+		padding: 0 !important;
+		margin-bottom: 100px;
+	}
+	h1 {
+		font-size: 3em !important;
+	}
+	h2 {
+		font-size: 2em !important;
+	}
+	section p {
+		text-align: center !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	section img {
+		max-width: 10cm !important;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fade-in-on-load {
+		display: block;
+	}
 }
