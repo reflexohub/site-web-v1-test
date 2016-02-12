@@ -22,3 +22,5 @@ defaults:
     values:
       layout: "page"
 
+sass:
+  sass_dir: assets/css
