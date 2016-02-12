@@ -10,6 +10,7 @@ baseurl: "site-web-v1-test"
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: true
 
 exclude: [ "CNAME", "README.md", "Gemfile", "Gemfile.lock" ]
 
