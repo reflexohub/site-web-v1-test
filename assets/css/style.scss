@@ -1,5 +1,95 @@
 ---
 ---
 
+@import url(https://fonts.googleapis.com/css?family=Macondo+Swash+Caps);
+
+
 @import "bootstrap";
 // @import "custom";
+
+
+
+
+
+$bkg-image:          "../../images/Fotolia_54913877_XL_1920x1280.jpg";
+$section-bkg-color:  rgba( 255, 255, 255, 0.8 );
+
+@media screen {
+	html {
+		background:#505D6E url( $bkg-image ) no-repeat center center fixed;
+		min-height:100%;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+			 -o-background-size: cover;
+				background-size: cover;
+	}
+
+	body {
+		background:transparent;
+		min-height:100%;
+		-webkit-font-smoothing: antialiased;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	section.section div.container div.row div {
+		background-color: $section-bkg-color;
+		padding-bottom: 50px;
+		// border: 2px solid;
+		border-radius: 10px !important;
+	}
+
+}
+
+section h1 { text-shadow: 3px 4px 5px hsla( 0, 100%, 0%, .2 ); }
+
+@media( max-width: 543px ){
+	section h1 { font-size: floor(($font-size-h1 * 0.75)); }
+	section h2 { font-size: floor(($font-size-h2 * 0.75)); }
+	.navbar-brand { font-size: 12pt; }
+}
+@media ( min-width: 544px ) and ( max-width: 767px ){
+	section h1 { font-size: floor(($font-size-h1 * 0.85)); }
+	section h2 { font-size: floor(($font-size-h2 * 0.85)); }
+	.navbar-brand { font-size: 14pt; }
+}
+
+section {
+	img {
+		max-width: 100%;
+	}
+	ul {
+		text-align: left;
+	}
+	h1, h2 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+
+}
+
+
+.fade-in-on-load {
+	display: none;
+}
