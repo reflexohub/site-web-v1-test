@@ -1,0 +1,38 @@
+{% comment %}
+<!-- Count the pages that have a `title`.
+This is needed to filter out CSS files. -->
+{% endcomment %}
+{% assign NbPages = 0 %}
+{% for thispage in site.pages %}
+	{% if thispage.title %}
+		{% assign NbPages = NbPages | plus: 1 %}
+	{% else %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+<!-- Get the index of the current page. -->
+{% endcomment %}
+{% assign PageID = 0 %}
+{% for thispage in site.pages %}
+	{% if thispage.url == page.url %}
+		{% break %}
+	{% else %}
+		{% assign PageID = PageID | plus: 1 %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+<!-- Get the previous and the next page. -->
+{% endcomment %}
+{% assign PrevPageID = PageID | plus: -1 | modulo: NbPages %}
+{% assign NextPageID = PageID | plus:  1 | modulo: NbPages %}
+{% assign PrevPage = site.pages[PrevPageID] %}
+{% assign NextPage = site.pages[NextPageID] %}
+
+
+<div class="btn-prev-next">
+	<a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}{{ PrevPage.url }}" role="button" accesskey="p"><i class="fa fa-chevron-left" ></i></a>
+	<span>&nbsp;&nbsp;&nbsp;</span>
+	<a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}{{ NextPage.url }}" role="button" accesskey="n"><i class="fa fa-chevron-right"></i></a>
+</div>
