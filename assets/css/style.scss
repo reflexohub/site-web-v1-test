@@ -35,7 +35,7 @@ $section-bkg-color:  rgba( 255, 255, 255, 0.8 );
 		$abtn-color: rgba( 165, 213, 100, 0.9 );
 		$abtn-color-hover: transparent;
 		a.btn {
-			width: 100px;
+			width: 85px;
 			background-color: $abtn-color;
 			border: 5px solid transparent;
 		}
@@ -43,6 +43,32 @@ $section-bkg-color:  rgba( 255, 255, 255, 0.8 );
 			background-color: $abtn-color-hover;
 			color: darken( $abtn-color, 30% );
 			border: 5px solid darken( $abtn-color, 30% );
+		}
+	}
+	#custom-menu {
+		display: none;
+	}
+	#custom-menu.toggled {
+		display: block;
+	}
+	a.custom-menu-item {
+		background-color: transparent;
+		border-bottom: 1px solid rgba( 10, 10, 10, 0.4 );
+		height: 55px;
+		display: block;
+		text-align: center;
+		padding: 14px 0 0;
+		margin-left: 25%;
+		margin-right: 25%;
+		&:last-child {
+			border-bottom: none;
+		}
+		&:first-child {
+			margin-top: 40px;
+		}
+		&:hover {
+			background-color: rgba( 0, 0, 0, 0.2 );
+			color: white;
 		}
 	}
 }

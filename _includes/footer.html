@@ -13,8 +13,14 @@
 <script src="assets/js/targetBlank.js"></script>
 <script type="text/javascript">
 jQuery( document ).ready( function( $ ) {
+	// fade-in-on-load
 	$( ".fade-in-on-load" ).each( function() {
 		$( this ).fadeIn( 1000 );
+	});
+	// Menu Toggle Script
+	$( "#menu-toggle" ).click( function( e ) {
+		e.preventDefault();
+		$( "#custom-menu" ).toggleClass( "toggled" );
 	});
 });
 </script>
