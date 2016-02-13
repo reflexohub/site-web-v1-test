@@ -27,14 +27,22 @@ $section-bkg-color:  rgba( 255, 255, 255, 0.8 );
 	div.opaque {
 		background-color: $section-bkg-color;
 		padding-bottom: 50px;
-		// border: 2px solid;
 		border-radius: 10px !important;
 		margin-bottom: 40px;
 	}
 	div.btn-prev-next {
 		margin-top: 50px;
+		$abtn-color: rgba( 165, 213, 100, 0.9 );
+		$abtn-color-hover: transparent;
 		a.btn {
 			width: 100px;
+			background-color: $abtn-color;
+			border: 5px solid transparent;
+		}
+		a.btn:hover, a.btn:active {
+			background-color: $abtn-color-hover;
+			color: darken( $abtn-color, 30% );
+			border: 5px solid darken( $abtn-color, 30% );
 		}
 	}
 }
@@ -113,19 +121,6 @@ footer.footer {
 	display: none;
 }
 
-// $abtn-color: hsla( 240, 15%, 50%, 1 );
-// $abtn-color: rgba( 72, 117, 30, 0.7 );
-$abtn-color: rgba( 165, 213, 100, 0.9 );
-$abtn-color-hover: transparent;
-a.btn {
-	background-color: $abtn-color;
-	border: 5px solid transparent;
-}
-a.btn:hover {
-	background-color: $abtn-color-hover;
-	color: darken( $abtn-color, 30% );
-	border: 5px solid darken( $abtn-color, 30% );
-}
 
 
 
