@@ -12,7 +12,7 @@ published: true
 
 Je vous présente mon site internet. Prenez le temps de le découvrir, ainsi que les différents aspects de la réflexologie que je pratique tous les mercredis après-midi au :
 
-[*Centre Ocinquieme Sens*](http://www.ocinquieme.ch)
+Centre Ocinquieme Sens
 11 rue du Grand-Bureau
 1227 Acacias (Genève)
 Suisse
